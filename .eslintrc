@@ -1,0 +1,37 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true }],
+    "no-console": ["off"],
+    "react/prop-types": ["off"],
+    "react/self-closing-comp": ["off"],
+    "quotes": ["off"],
+    "prefer-destructuring": ["off"],
+    "react/jsx-first-prop-new-line": ["off"],
+    "react/jsx-closing-bracket-location": ["off"],
+    "react/jsx-max-props-per-line": ["off"],
+    "no-underscore-dangle": ["off"],
+    "react/jsx-indent-props": ["off"],
+    "react/jsx-indent": ["off"],
+    "react/jsx-closing-tag-location": ["off"],
+    "react/jsx-curly-spacing": ["off"],
+    "react/jsx-equals-spacing": ["off"],
+    "react/jsx-wrap-multilines": ["off"],
+    "react/jsx-tag-spacing": ["off"],
+    "react/jsx-filename-extension": ["off"],
+    "import/first": ["off"],
+    "import/no-unresolved": ["off"],
+    "radix": ["off"],
+    "react/prefer-stateless-function": ["off"],
+    "no-plusplus": ["off"],
+    "import/extensions": ["error", "never", { "ignorePackages": true }],
+    "no-restricted-syntax": ["off"],
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb", "plugin:prettier/recommended"],
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true
+  }
+}

@@ -1,8 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './assets/index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import config from './assets/config';
+import registerServiceWorker from './assets/registerServiceWorker';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import 'semantic-ui-css/semantic.min.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+console.log('current adminApi: ', config);
+
+ReactDOM.render(
+  <BrowserRouter>
+    <Switch>
+      <Route component={App} />
+    </Switch>
+  </BrowserRouter>,
+  document.getElementById('root')
+);
 registerServiceWorker();

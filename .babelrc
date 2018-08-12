@@ -1,0 +1,26 @@
+{
+  "presets" : [
+    ["env", {
+      "targets": {
+        "edge": 17,
+        "browsers": ["last 2 versions"],
+        "node": "current",
+        "modules": false,
+        "useBuiltIns": true
+      }
+    }], "react-app"],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "transform-runtime",
+    ["lodash", {"id": ["lodash", "semantic-ui-react"]}]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-react-remove-prop-types"
+      ]
+    }
+  }
+}
