@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './assets/index.css';
 import App from './App';
 import config from './assets/config';
-import registerServiceWorker from './assets/registerServiceWorker';
+import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
+import 'gestalt/dist/gestalt.css';
+import './assets/custom.scss';
 
 console.log('current adminApi: ', config);
 

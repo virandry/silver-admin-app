@@ -1,0 +1,17 @@
+/* Generic|Global */
+.app {
+    background: #f6f8fa;
+}
+.logo {
+    width: 27px;
+    height: 30px;
+}
+.admin {
+    &.header {
+        margin-top: -92px;
+    }
+    &.nav {
+        height: 92px;
+    }
+
+}
